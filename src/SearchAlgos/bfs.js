@@ -2,6 +2,8 @@ export default function bfs (p) {
     const height = 400;
     const width = 600;
     
+    let chance = 0.2;
+
     let cols = 30;
     let rows = 20;
     
@@ -29,6 +31,8 @@ export default function bfs (p) {
             grid[i][j].addConnections();
         }
     }
+    
+    createBlocks();
 
     BFS();
 };      
@@ -42,7 +46,9 @@ export default function bfs (p) {
         this.found = false;
 
         this.show = ()=>{
-            if(this.found){
+            if(this.blocked){
+                p.fill(0);
+            }else if(this.found){
                 p.fill(0,255,0);
             } else if(this.inQ && !this.visited){
                 p.fill(0,0,255);
@@ -71,6 +77,20 @@ export default function bfs (p) {
         }
     }
 
+    function createBlocks(){
+        for(let i=0; i<cols; i++){
+            for(let j=0; j< rows; j++){
+                if(i !== 0 && j !==0 ||  i !== cols-1 && j !==rows-1)
+                {
+                    if(Math.random()<chance){
+                        grid[i][j].blocked = true;
+                    }
+                }
+            }
+        }
+
+    }
+
    async function BFS(){
         let queue = [];
 
@@ -87,7 +107,7 @@ export default function bfs (p) {
                 for(let j = 0; j < node.connectedSqures.length; j++){
                     if(node.connectedSqures[j]) {
                         await sleep(1);
-                        if(!node.connectedSqures[j].visited && !node.connectedSqures[j].inQ){
+                        if(!node.connectedSqures[j].visited && !node.connectedSqures[j].inQ && !node.connectedSqures[j].blocked){
                             queue.push(node.connectedSqures[j]);
                             node.connectedSqures[j].inQ = true;
                         }
