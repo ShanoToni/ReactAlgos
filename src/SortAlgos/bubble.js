@@ -23,9 +23,8 @@ export default function bubble (p) {
         do {
             swapped = false;
             for(let i=0; i< lastIdx;i++){
-               await sleep(50);
                 if(values[i]>values[i+1]){
-                    swap(values, i, i+1);
+                   await swap(values, i, i+1);
                     selected[0]=i;
                     selected[1]=i+1;
                     swapped = true;
@@ -35,8 +34,8 @@ export default function bubble (p) {
         }
         while (swapped);
     }
-
-
+    
+    
     p.draw = function () {
         p.background(100);
         for(let i = 0; i< values.length; i++)
@@ -46,20 +45,21 @@ export default function bubble (p) {
             } else {
                 p.fill(255);
             }
-
-            if (i == selected[0] || i == selected[1])
+            
+            if (i === selected[0] || i === selected[1])
             {
                 p.fill(0,255,0);
             }
             p.rect(i*10 , height, 10, -values[i] );
         }
     };
-
-   let swap = (arr, idx1, idx2) =>{
-        let temp = arr[idx1];
-        arr[idx1] = arr[idx2];
-        arr[idx2] = temp;
-    }
+    
+    async function swap (arr, idx1, idx2){
+        await sleep(25);
+         let temp = arr[idx1];
+         arr[idx1] = arr[idx2];
+         arr[idx2] = temp;
+     }
 
     let sleep = (ms)=> {
         return new Promise(resolve => setTimeout(resolve,ms));

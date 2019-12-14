@@ -10,9 +10,7 @@ function Splash() {
               </div>
             </nav> 
               <div class="dtc w2 v-mid pa3">
-                <a  class="dib ml6 w4 h4 grow-large border-box">
-                <img src="https://i.imgur.com/o2dmEq0.png" class="mw-100" alt="night sky over water"></img>
-                </a>
+                
               </div>
             <div class="tc-l mt4 mt5-m mt6-l ph3">
               <h1 class="f1 f1-l fw3 black mb0 lh-title">Algorithm Visualization</h1>

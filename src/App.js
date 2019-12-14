@@ -4,11 +4,14 @@ import P5Wrapper from 'react-p5-wrapper';
 
 import Splash from './Components/splash';
 import List from './Components/list'
+import AlgoSplash from "./Components/AlgoSpalash"
 
 import './App.css';
 
 import bubble from "./SortAlgos/bubble"
-import BubbleSplash from "./SortAlgos/bubbleSplash"
+import selection from "./SortAlgos/selection"
+import quick from "./SortAlgos/quick"
+import bfs from "./SearchAlgos/bfs"
 
 
 const particlesOptions = {
@@ -31,8 +34,40 @@ const particlesOptions = {
  
 };
 
+const algoData = [
+    {
+      name : "bubble",
+      title : "Bubble Sort",
+      description : "Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. It requires an O(n*n) time complexity on average while also requiring a large number of memory operations (swaps). Bubble sort is considered the simplest and most inefficient sorting algorithm",
+      algorithm: bubble
+    },
+    {
+      name : "selection",
+      title : "Selection Sort",
+      description : "The selection sort algorithm sorts an array by repeatedly finding the minimum element from unsorted part and putting it at the beginning. While having the same time complexity as Bubble Sort O(n*n) it is a superior algorithm due to the decrease of swaps occuring in the list.",
+      algorithm :selection
+    },
+    {
+      name : "quick",
+      title : "Quick Sort",
+      description : "QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements before it, and put all greater elements after it.",
+      algorithm :quick
+    },
+    {
+      name : "bfs",
+      title : "Breadth First Search",
+      description : "Something something something... Darkside",
+      algorithm :bfs
+    },
+];
+  
+
+
 const initState ={
-    algo: "none"
+    algo: "none",
+    title: "none",
+    description: "none",
+    algorithm: null
 };
 
 class App extends React.Component {
@@ -42,7 +77,19 @@ class App extends React.Component {
   }
 
   onAlgoChange = (newAlgo) =>{
-    this.setState({algo : newAlgo })
+    this.setState({algo : newAlgo,}, ()=>{  
+      algoData.forEach((algo,idx,arr) =>{
+        if(this.state.algo === algo.name)
+        {
+          this.setState({
+            title:algo.title, 
+            description: algo.description,
+            algorithm: algo.algorithm
+          });
+        }
+      })
+      console.log(this.state);
+    })
   }
 
   render(){
@@ -56,15 +103,12 @@ class App extends React.Component {
             <Splash/>
             <List onAlgoChange = {this.onAlgoChange}/>
            </div>
-         : this.state.algo === "bubble"
-          ? <div>
-              <BubbleSplash onAlgoChange = {this.onAlgoChange}/>
-              <div className="flex justify-center">
-                <P5Wrapper sketch={bubble} />
-              </div>
+         : <div>
+            <AlgoSplash title={this.state.title} description={this.state.description} onAlgoChange = {this.onAlgoChange}/>
+            <div className="flex justify-center">
+              <P5Wrapper sketch={this.state.algorithm} />
             </div>
-          
-          : <p>Something</p>
+          </div>
         }
           </div></div>
       </div>
