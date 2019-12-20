@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ReactAlgos/static/css/main.17bb187d.chunk.css",
-    "main.js": "/ReactAlgos/static/js/main.82b65745.chunk.js",
-    "main.js.map": "/ReactAlgos/static/js/main.82b65745.chunk.js.map",
+    "main.css": "/ReactAlgos/static/css/main.3167aacc.chunk.css",
+    "main.js": "/ReactAlgos/static/js/main.cce7e11c.chunk.js",
+    "main.js.map": "/ReactAlgos/static/js/main.cce7e11c.chunk.js.map",
     "runtime-main.js": "/ReactAlgos/static/js/runtime-main.1e52c9e8.js",
     "runtime-main.js.map": "/ReactAlgos/static/js/runtime-main.1e52c9e8.js.map",
     "static/css/2.eb45ad44.chunk.css": "/ReactAlgos/static/css/2.eb45ad44.chunk.css",
     "static/js/2.4476e4a7.chunk.js": "/ReactAlgos/static/js/2.4476e4a7.chunk.js",
     "static/js/2.4476e4a7.chunk.js.map": "/ReactAlgos/static/js/2.4476e4a7.chunk.js.map",
     "index.html": "/ReactAlgos/index.html",
-    "precache-manifest.b888187ba45bfc4c7e080aaa52541dcf.js": "/ReactAlgos/precache-manifest.b888187ba45bfc4c7e080aaa52541dcf.js",
+    "precache-manifest.b2ed8e07f121d8c5002783038f62ae30.js": "/ReactAlgos/precache-manifest.b2ed8e07f121d8c5002783038f62ae30.js",
     "service-worker.js": "/ReactAlgos/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/ReactAlgos/static/css/2.eb45ad44.chunk.css.map",
-    "static/css/main.17bb187d.chunk.css.map": "/ReactAlgos/static/css/main.17bb187d.chunk.css.map",
+    "static/css/main.3167aacc.chunk.css.map": "/ReactAlgos/static/css/main.3167aacc.chunk.css.map",
     "static/js/2.4476e4a7.chunk.js.LICENSE": "/ReactAlgos/static/js/2.4476e4a7.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.1e52c9e8.js",
     "static/css/2.eb45ad44.chunk.css",
     "static/js/2.4476e4a7.chunk.js",
-    "static/css/main.17bb187d.chunk.css",
-    "static/js/main.82b65745.chunk.js"
+    "static/css/main.3167aacc.chunk.css",
+    "static/js/main.cce7e11c.chunk.js"
   ]
 }
