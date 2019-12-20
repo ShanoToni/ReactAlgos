@@ -3,16 +3,20 @@ import Particles from 'react-particles-js';
 import P5Wrapper from 'react-p5-wrapper';
 
 import Splash from './Components/splash';
-import List from './Components/list'
-import AlgoSplash from "./Components/AlgoSpalash"
+import List from './Components/list';
+import AlgoSplash from "./Components/AlgoSpalash";
 
 import './App.css';
 
-import bubble from "./SortAlgos/bubble"
-import selection from "./SortAlgos/selection"
-import quick from "./SortAlgos/quick"
-import bfs from "./SearchAlgos/bfs"
+import bubble from "./SortAlgos/bubble";
+import selection from "./SortAlgos/selection";
+import quick from "./SortAlgos/quick";
 
+import bfs from "./SearchAlgos/bfs";
+import dfs from "./SearchAlgos/dfs";
+import astar from "./SearchAlgos/astar"
+
+import maze from "./OtherAlgos/maze";
 
 const particlesOptions = {
   particles: {
@@ -56,8 +60,26 @@ const algoData = [
     {
       name : "bfs",
       title : "Breadth First Search",
-      description : "Something something something... Darkside",
+      description : "This algorithm is used to examine nodes looking for a correct answer or a goal node. The approach is based on a queue data structure. Upon visiting a new square all other squares are added to the back of the queue, while the next examined square is taken from the start of the queue. It is optimal for finding the shortest path, howerver high memory use.",
       algorithm :bfs
+    },
+    {
+      name : "maze",
+      title : "Maze Generation ",
+      description : "This algorithm is based on recursive division. It divides the scope of the field into two sections and chooses a random wall to create a passage. It continues to divide the filed until division is no longer possible creating a maze. Used in the search algorithms",
+      algorithm :maze
+    },
+    {
+      name : "dfs",
+      title : "Depth First Search ",
+      description : "Similar to Breadth First it implements a data structure in order to do the traversal. The data structure used is a stack. Upon visiting a square all others are added to the stack, however the next examined square is taken from the back of the stack. While more efficient in memory use does not lead to optimal solutions.",
+      algorithm :dfs
+    },
+    {
+      name : "astar",
+      title : "A* Search ",
+      description : "The A* algorithm is a more optimal traversal approach due to the use of a heuristic or an educated guess as to the goal node. The cost of travelling to each node is evaluated in comparison to how close it is to the node, allowing only potential optimal solutions to be examined.",
+      algorithm : astar
     },
 ];
   

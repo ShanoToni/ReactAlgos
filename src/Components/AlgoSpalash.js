@@ -2,19 +2,19 @@ import React from "react";
 
 function AlgoSplash({onAlgoChange, title, description}) {
     return(
-        <header class="sans-serif">
-        <div class="cover bg-left bg-center-l" >
-          <div class=" pb5 pb6-m pb5-l">
-            <nav class="dt w-100 mw8 center"> 
-              <div class="dtc v-mid tr pa3">
+        <header className="sans-serif">
+        <div className="cover bg-left bg-center-l" >
+          <div className=" pb5 pb6-m pb5-l">
+            <nav className="dt w-100 mw8 center"> 
+              <div className="dtc v-mid tr pa3">
               </div>
             </nav> 
-              <div class="dtc w2 v-mid pa3">
+              <div className="dtc w2 v-mid pa3">
                 
               </div>
-            <div class="tc-l mt4 mt5-m mt6-l ph3">
-              <h1 class="f1 f1-l fw3 black mb0 lh-title">{title}</h1>
-              <div className="flex justify-center mh6">
+            <div className="tc-l mt4 mt5-m mt6-l ph3">
+              <h1 className="f1 f1-l fw3 black mb0 lh-title">{title}</h1>
+              <div className="flex justify-center marg">
                 <h2 class="fw1 f3 black mt3 mb2 lh-copy">{description}</h2>
               </div>
               <div className="flex justify-center">

@@ -11,4 +11,15 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -2;
 }
+.marg{
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
 
+@media only screen and (max-width: 900px) {
+  .marg {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  
+}
