@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ReactAlgos/precache-manifest.b2ed8e07f121d8c5002783038f62ae30.js"
+  "/ReactAlgos/precache-manifest.48d940dfc0b77d83b5a9f919e6d4f49e.js"
 );
 
 self.addEventListener('message', (event) => {
