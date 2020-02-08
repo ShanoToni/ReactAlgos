@@ -87,13 +87,13 @@ const algoData = [
     {
       name : "ray2d",
       title : "2D Ray Casting",
-      description : "Something something something... Darkside",
+      description : "Ray Casting is an approach to detect intersections between objects using by casting rays. Using a large amount of rays allows the ray intersection to draw rectangles to represent the distance to the object creating the illusion of 3D.",
       algorithm : ray2d
     },
     {
       name : "quadtree",
       title : "Bounding Volume Heirarchy (Quadtree)",
-      description : "Something something something... Darkside",
+      description : "The Quadtree is also reffered to as a Kd-Tree is a case of spacial partitioning optimization, allowing large intersection tests to be done with consideration only towards the local objects.",
       algorithm : quadtree
     },
 ];
