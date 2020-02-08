@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ReactAlgos/static/css/main.3167aacc.chunk.css",
-    "main.js": "/ReactAlgos/static/js/main.fc8e0434.chunk.js",
-    "main.js.map": "/ReactAlgos/static/js/main.fc8e0434.chunk.js.map",
+    "main.js": "/ReactAlgos/static/js/main.cc92e32b.chunk.js",
+    "main.js.map": "/ReactAlgos/static/js/main.cc92e32b.chunk.js.map",
     "runtime-main.js": "/ReactAlgos/static/js/runtime-main.1e52c9e8.js",
     "runtime-main.js.map": "/ReactAlgos/static/js/runtime-main.1e52c9e8.js.map",
     "static/css/2.eb45ad44.chunk.css": "/ReactAlgos/static/css/2.eb45ad44.chunk.css",
     "static/js/2.5dcbf354.chunk.js": "/ReactAlgos/static/js/2.5dcbf354.chunk.js",
     "static/js/2.5dcbf354.chunk.js.map": "/ReactAlgos/static/js/2.5dcbf354.chunk.js.map",
     "index.html": "/ReactAlgos/index.html",
-    "precache-manifest.48d940dfc0b77d83b5a9f919e6d4f49e.js": "/ReactAlgos/precache-manifest.48d940dfc0b77d83b5a9f919e6d4f49e.js",
+    "precache-manifest.20ff484e349bf3559cfb023e9f7d8786.js": "/ReactAlgos/precache-manifest.20ff484e349bf3559cfb023e9f7d8786.js",
     "service-worker.js": "/ReactAlgos/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/ReactAlgos/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.3167aacc.chunk.css.map": "/ReactAlgos/static/css/main.3167aacc.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.eb45ad44.chunk.css",
     "static/js/2.5dcbf354.chunk.js",
     "static/css/main.3167aacc.chunk.css",
-    "static/js/main.fc8e0434.chunk.js"
+    "static/js/main.cc92e32b.chunk.js"
   ]
 }

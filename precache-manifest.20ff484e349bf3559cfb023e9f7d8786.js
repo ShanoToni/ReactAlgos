@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f1a8c201a9a716de402b61ce4761c83",
+    "revision": "bfb4c8a890845a2f14adaaa58f4caa84",
     "url": "/ReactAlgos/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactAlgos/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "39fb5ec3a29ad1acae47",
+    "revision": "91599750aa77b4fe1ce1",
     "url": "/ReactAlgos/static/css/main.3167aacc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactAlgos/static/js/2.5dcbf354.chunk.js.LICENSE"
   },
   {
-    "revision": "39fb5ec3a29ad1acae47",
-    "url": "/ReactAlgos/static/js/main.fc8e0434.chunk.js"
+    "revision": "91599750aa77b4fe1ce1",
+    "url": "/ReactAlgos/static/js/main.cc92e32b.chunk.js"
   },
   {
     "revision": "983dd4a362c4239824ac",
