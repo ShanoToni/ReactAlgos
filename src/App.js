@@ -17,6 +17,9 @@ import dfs from "./SearchAlgos/dfs";
 import astar from "./SearchAlgos/astar"
 
 import maze from "./OtherAlgos/maze";
+import ray2d from "./OtherAlgos/ray2d";
+import quadtree from "./OtherAlgos/quadtree";
+
 
 const particlesOptions = {
   particles: {
@@ -80,6 +83,18 @@ const algoData = [
       title : "A* Search ",
       description : "The A* algorithm is a more optimal traversal approach due to the use of a heuristic or an educated guess as to the goal node. The cost of travelling to each node is evaluated in comparison to how close it is to the node, allowing only potential optimal solutions to be examined.",
       algorithm : astar
+    },
+    {
+      name : "ray2d",
+      title : "2D Ray Casting",
+      description : "Something something something... Darkside",
+      algorithm : ray2d
+    },
+    {
+      name : "quadtree",
+      title : "Bounding Volume Heirarchy (Quadtree)",
+      description : "Something something something... Darkside",
+      algorithm : quadtree
     },
 ];
   

@@ -25,6 +25,8 @@ function List({onAlgoChange}) {
                         <h1 className="f4 bold center mw5">Other</h1>
                         <ul className="list pl0 ml0 center mw5 ba b--light-silver br3">
                         <li onClick={()=>onAlgoChange("maze")} className="ph3 pv2 bb b--light-silver pointer hover-white ">Maze Generation</li>
+                        <li onClick={()=>onAlgoChange("ray2d")} className="ph3 pv2 bb b--light-silver pointer hover-white ">2D Ray Casting</li>
+                        <li onClick={()=>onAlgoChange("quadtree")} className="ph3 pv2 bb b--light-silver pointer hover-white ">Quad Tree</li>
                         </ul>
                     </div>
                 </div>
