@@ -20,6 +20,7 @@ function List({onAlgoChange}) {
                         <li onClick={()=>onAlgoChange("bfs")} className="ph3 pv2 bb b--light-silver pointer hover-white ">Breadth First Search</li>
                         <li onClick={()=>onAlgoChange("dfs")} className="ph3 pv2 bb b--light-silver pointer hover-white ">Depth First Search</li>
                         <li onClick={()=>onAlgoChange("astar")} className="ph3 pv2 bb b--light-silver pointer hover-white ">A* Search</li>
+                        <li onClick={()=>onAlgoChange("dijikstra")} className="ph3 pv2 bb b--light-silver pointer hover-white ">Dijikstra Search</li>
                         </ul>
                     </div>
                     <div class="fl w-100 w-third-ns ">

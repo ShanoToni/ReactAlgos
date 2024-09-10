@@ -15,7 +15,8 @@ import heap from "./SortAlgos/heap"
 
 import bfs from "./SearchAlgos/bfs";
 import dfs from "./SearchAlgos/dfs";
-import astar from "./SearchAlgos/astar"
+import astar from "./SearchAlgos/astar";
+import dijikstra from './SearchAlgos/dijikstra';
 
 import maze from "./OtherAlgos/maze";
 import ray2d from "./OtherAlgos/ray2d";
@@ -91,6 +92,13 @@ const algoData = [
       description : "The A* algorithm is a more optimal traversal approach due to the use of a heuristic or an educated guess as to the goal node. The cost of travelling to each node is evaluated in comparison to how close it is to the node, allowing only potential optimal solutions to be examined.",
       algorithm : astar
     },
+    {
+      name : "dijikstra",
+      title : "Dijikstra Search ",
+      description : "Dijkstra's algorithm finds the shortest path from one vertex to all other vertices. It does so by repeatedly selecting the nearest unvisited vertex and calculating the distance to all the unvisited neighboring vertices",
+      algorithm : dijikstra
+    },
+    
     {
       name : "ray2d",
       title : "2D Ray Casting",
