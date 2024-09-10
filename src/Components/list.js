@@ -11,6 +11,7 @@ function List({onAlgoChange}) {
                             <li onClick={()=>onAlgoChange("bubble")} className="ph3 pv2 bb b--light-silver pointer hover-white ">BubbleSort</li>
                             <li onClick={()=>onAlgoChange("selection")} className="ph3 pv2 bb b--light-silver pointer hover-white ">SelectionSort</li>
                             <li onClick={()=>onAlgoChange("quick")} className="ph3 pv2 bb b--light-silver pointer hover-white ">QuickSort</li>
+                            <li onClick={()=>onAlgoChange("heap")} className="ph3 pv2 bb b--light-silver pointer hover-white ">HeapSort</li>
                         </ul>
                     </div>
                     <div class="fl w-100 w-third-ns">
