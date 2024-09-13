@@ -8,6 +8,7 @@ function List({onAlgoChange}) {
                     <div class="fl w-100 w-third-ns ">
                         <h1 className="f4 bold center mw5">Sorting</h1>
                         <ul className="list pl0 ml0 center mw5 ba b--light-silver br3">
+                            <li onClick={()=>onAlgoChange("bogo")} className="ph3 pv2 bb b--light-silver pointer hover-white ">BogoSort</li>
                             <li onClick={()=>onAlgoChange("bubble")} className="ph3 pv2 bb b--light-silver pointer hover-white ">BubbleSort</li>
                             <li onClick={()=>onAlgoChange("selection")} className="ph3 pv2 bb b--light-silver pointer hover-white ">SelectionSort</li>
                             <li onClick={()=>onAlgoChange("quick")} className="ph3 pv2 bb b--light-silver pointer hover-white ">QuickSort</li>

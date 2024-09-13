@@ -8,6 +8,7 @@ import AlgoSplash from "./Components/AlgoSpalash";
 
 import './App.css';
 
+import bogo from "./SortAlgos/bogo";
 import bubble from "./SortAlgos/bubble";
 import selection from "./SortAlgos/selection";
 import quick from "./SortAlgos/quick";
@@ -44,6 +45,12 @@ const particlesOptions = {
 };
 
 const algoData = [
+    {
+      name : "bogo",
+      title : "Bogo Sort",
+      description : "One of the fastest or most inneficient algorithms, is the array sorted? No? Shuffle everything? How about now? SHUFFLE EVERYTHING!",
+      algorithm: bogo
+    },
     {
       name : "bubble",
       title : "Bubble Sort",
