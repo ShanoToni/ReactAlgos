@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ReactAlgos/static/css/main.54c9ee8d.css",
-    "main.js": "/ReactAlgos/static/js/main.872eb5b3.js",
+    "main.js": "/ReactAlgos/static/js/main.0e7cae2b.js",
     "index.html": "/ReactAlgos/index.html",
     "main.54c9ee8d.css.map": "/ReactAlgos/static/css/main.54c9ee8d.css.map",
-    "main.872eb5b3.js.map": "/ReactAlgos/static/js/main.872eb5b3.js.map"
+    "main.0e7cae2b.js.map": "/ReactAlgos/static/js/main.0e7cae2b.js.map"
   },
   "entrypoints": [
     "static/css/main.54c9ee8d.css",
-    "static/js/main.872eb5b3.js"
+    "static/js/main.0e7cae2b.js"
   ]
 }
